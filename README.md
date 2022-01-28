@@ -1,7 +1,7 @@
 # bankrupty-classification-eda
 The research question of interest is the predict if a firm in a given year has entered bankruptcy proceedings (1) or has not (0). 
 
-The code can be run interactively through a [Google Colab Notebook]().
+The code can be run interactively through a [Google Colab Notebook](https://colab.research.google.com/github/jhancuch/bankruptcy-classification-eda/blob/main/bankrupty-classification-eda.ipynb).
 
 ## Research design and modeling methods
 The research design uses three different classifiers, Support Vector Machine (SVM), Logistic Regression (Logit) and Naive Bayes. Examining the data through EDA, I discover I have an unbalanced dataset with only ~3% of observations being bankrupt firms. Thus, when I conduct hyperparameter tuning for SVM and Logit through a grid search with a cross validation of k=5, I will include different class weights as parameters to help determine the optimal model parameters. For Naive Bayes, instead of the standard model, I use the Complement Naive Bayes model to help tackle the unbalanced dataset. 
