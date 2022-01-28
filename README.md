@@ -21,3 +21,7 @@ I additionally utilize a standard scaler for SVM and Logit but use a min-max sca
 | Validation (0) Recall | 1.00 | 0.99 | 0.51 |
 | Validation (0) F1-Score | 0.98 | 0.98 | 0.68 |
 
+Overall, the model development was underwhelming. Between SVM, Logit, and the Complement Naive Bayes, Logit is the best model. Complement Naive Bayes takes itself out of the running with its ppor precision and recall of bankrupt firms. Logit narrowly beats out SVM due to its marginal increase in precision and recall for bankrupt firms and a only 1% decline in recall of non-bankrupt firms compared to SVM. We also see that Logit has the highest F1-Score for bankrupt firms and non-bankrupt firms.
+
+## Discusion
+A potential area of improvement lies in variable selection. No variable selection was utilized but potentially using correlation heat maps and a random forest based algorithm to determine the importance of each variable could prove useful. Potentially the models have too much noise with extraneous variables leading to less than optimal outcomes.
